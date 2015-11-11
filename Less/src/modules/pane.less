@@ -1,0 +1,38 @@
+
+/**********************************************/
+/* Panes
+/**********************************************/
+
+.elements-topbar,
+.tabbed-pane-header {
+    flex: 0 0 auto;
+
+	&,
+	#elements-crumbs {
+		background-color: @darkblack;
+	}
+
+	* {
+		color: mix(@white, @black) !important;
+	}
+
+	.tabbed-pane-header-tab {
+		height: 32px;
+
+		margin: 0;
+
+    	padding-top: 6px;
+    	padding-bottom: 6px;
+
+		border: none;
+
+		border-top: 2px solid;
+
+		transition: border-color ease-in-out .15s;
+
+		&.selected {
+			border-color: @green !important;
+			background: none;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+  "name": "devtools-darkflat",
+  "version": "1.0.0",
+  "description": "A fancy and clean Devtools theme.",
+  "private": true,
+  "main": "Gruntfile.js",
+  "keywords": [
+    "chrome",
+    "devtools",
+    "inspector",
+    "auw"
+  ],
+  "author": "Max Scopp",
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-watch": "~0.6.1"
+  },
+  "scripts": {
+    "postinstall": "grunt build;",
+    "postupdate": "grunt build;"
+  }
+}

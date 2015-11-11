@@ -1,0 +1,76 @@
+
+/**********************************************/
+/* Layout
+/**********************************************/
+
+.elements-disclosure {
+	li {
+		padding-top: 1px !important;
+		padding-bottom: 1px !important;
+
+		&:before,
+		.highlight {
+			position: relative;
+			top: 1px;
+		}
+
+		+ ol.children {
+			position: relative !important;
+    		//counter-increment: child;
+			//counter-reset: child;
+	
+			&:before {
+    			//content: counter(child);
+				position: absolute;
+				//left: -100%;
+				left: 0;
+
+				// border-left: 1px dashed mix(@black, @lightblack, 50%) !important;
+				// box-shadow: 16px 0 0 fade(white, 5%);
+			 //    border-left: 1px dashed #292929 !important;
+			 //    box-shadow: 16px 0 0 rgba(255, 255, 255, 0.05);
+			    height: 100%;
+			    width: 200%;
+			    //background: fade(@dark);
+			}
+		}
+	}
+
+	li.selected {
+		.selection {
+			background-color: @current-line;
+		}
+	}
+
+	li.hovered:not(.selected) {
+		.selection {
+			background: @selection !important;
+			border: 1px solid @current-line;
+		}
+	}
+}
+
+.script-view,
+.properties-tree,
+.pane,
+.breakpoint-list li,
+.pane > .body .info {
+  color: #CCC !important;
+}
+
+.script-view,
+.text-editor-contents,
+.pane.expanded,
+#elements-content,
+.resource-view.json {
+  background: @background !important;
+  font-size: 12px !important;
+}
+
+.highlight {
+  color: #F1F1F1;
+}
+
+#elements-content .selected {
+  background-color: @selection !important;
+}

@@ -1,0 +1,33 @@
+
+/**********************************************/
+/* Side Panes
+/**********************************************/
+
+.sidebar-pane {
+	background-color: @darkblack !important;
+	color: @white !important;
+
+	.sidebar-pane-button-new-rule {
+    	-webkit-filter: invert(1);
+    	filter: invert(1);
+	}
+
+	.styles-section {
+		.selector {
+			color: fade(@white, 25%) !important;
+
+			transition: color ease .5s;
+
+			&:hover {
+				color: fade(@white, 75%) !important;
+			}
+
+			.simple-selector {
+				&.selector-matches {
+					color: @css-selector !important;
+					text-decoration: underline !important;
+				}
+			}
+		}
+	}
+}

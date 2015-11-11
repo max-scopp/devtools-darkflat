@@ -1,0 +1,115 @@
+
+/**********************************************/
+/* CSS
+/**********************************************/
+
+.CodeMirror {
+	background-color: @background !important;
+	color: @white;
+}
+
+.CodeMirror-lines {
+	background-color: @background !important;
+	color: @white;
+
+	.CodeMirror-activeline {
+		background-color: @darkblack !important;
+	}
+
+	.CodeMirror-cursor {
+		border-left: 2px solid @yellow !important;
+	}
+
+	.CodeMirror-matchingbracket {
+		font-weight: bold;
+		color: @black !important;
+		background-color: @green;
+	    padding: 2px 4px;
+	    border-radius: 4px;
+	}
+
+	.cm-css-comment {
+		color: @css-comment !important;
+	}
+
+	.cm-css-builtin {
+		color: hsl(hue(@css-selector) + 15, 100%, 69%) !important;
+	}
+
+	.cm-css-tag {
+		color: @css-selector !important;
+	}
+
+	.cm-css-variable,
+	.cm-css-variable-3 {
+		color: fade(@css-selector, 50%) !important;
+	}
+
+	.cm-css-property {
+		color: @css-property !important;
+	}
+
+	.cm-tab:before {
+		border-color: @lightblack !important;
+	}
+
+	.cm-whitespace:before {
+		color: @lightblack !important;
+	}
+
+	.cm-css-number {
+		color: @css-number !important;
+	}
+
+	.cm-css-string {
+		color: @css-string !important;
+	}
+
+	.cm-css-meta {
+		color: @css-meta !important;
+	}
+
+	.cm-highlight {
+	  -webkit-animation: custo-fadeout cubic-bezier(1, 0, .75, 1) 1s 0s !important;
+	}
+
+	@-webkit-keyframes custo-fadeout {
+	    from {
+	    	background-color: @yellow;
+	    }
+
+	    to {
+	    	background-color: transparent;
+	    }
+	}
+}
+
+.webkit-css-comment {
+  color: @css-comment !important;
+}
+
+.webkit-css-selector,
+.styles-selector {
+  color: @css-selector !important;
+}
+
+.webkit-css-property {
+  color: @css-property !important;
+}
+
+.webkit-css-keyword {
+  color: @css-keyword !important;
+}
+
+.webkit-css-number,
+.properties-tree .value {
+  color: @css-number !important;
+}
+
+.webkit-css-string {
+  color: @css-string !important;
+}
+
+.webkit-css-url {
+  color: @css-url !important;
+}
